@@ -1,0 +1,23 @@
+.main-container {
+    width: 80%;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .section {
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }

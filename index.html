@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>预制菜行业洞察 | 市场与消费趋势分析</title>
+
+    <!-- 引入Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 引入Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- 自定义Tailwind配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4A6CF7', // 主色调：蓝色，代表专业和信任
+                        secondary: '#FF7D54', // 辅助色：橙色，代表食品和活力
+                        neutral: '#F5F7FA', // 中性色：浅灰，用于背景
+                        dark: '#333647', // 深色：用于文本
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <!-- 自定义工具类 -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+
+            .card-shadow {
+                box-shadow: 0 10px 25px -5px rgba(74, 108, 247, 0.1);
+            }
+
+            .hover-scale {
+                transition: transform 0.3s ease;
+            }
+
+            .hover-scale:hover {
+                transform: scale(1.03);
+            }
+        }
+    </style>
+</head>
+
+<body class="font-inter bg-neutral text-dark">
+    <!-- 导航栏 -->
+    <header id="navbar" class="fixed top-0 left-0 w-full bg-white bg-opacity-95 shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fa fa-cutlery text-primary text-2xl"></i>
+                <h1 class="text-xl font-bold text-primary">预制菜行业洞察</h1>
+            </div>
+
+            <!-- 移动端菜单按钮 -->
+            <button id="menu-toggle" class="lg:hidden text-dark focus:outline-none">
+                <i class="fa fa-bars text-xl"></i>
+            </button>
+
+            <!-- 导航菜单 -->
+            <nav id="nav-menu" class="hidden lg:flex items-center space-x-8">
+                <a href="#market" class="font-medium text-dark hover:text-primary transition-colors">市场规模</a>
+                <a href="#demand" class="font-medium text-dark hover:text-primary transition-colors">需求侧洞察</a>
+                <a href="#balance" class="font-medium text-dark hover:text-primary transition-colors">健康与方便</a>
+                <a href="#summary" class="font-medium text-dark hover:text-primary transition-colors">总结与展望</a>
+            </nav>
+        </div>
+
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="#market" class="font-medium text-dark hover:text-primary transition-colors py-2">市场规模</a>
+                <a href="#demand" class="font-medium text-dark hover:text-primary transition-colors py-2">需求侧洞察</a>
+                <a href="#balance" class="font-medium text-dark hover:text-primary transition-colors py-2">健康与方便</a>
+                <a href="#summary" class="font-medium text-dark hover:text-primary transition-colors py-2">总结与展望</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-primary/90 to-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold mb-6 leading-tight">
+                    全国日均销售6000万份<br>预制菜背后的"账单"
+                </h1>
+                <p class="text-[clamp(1rem,2vw,1.25rem)] opacity-90 mb-8">
+                    深度解析预制菜市场规模、消费需求与健康趋势的行业洞察报告
+                </p>
+                <a href="#market" class="inline-block bg-white text-primary font-medium py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+                    开始探索 <i class="fa fa-arrow-down ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 市场规模变化趋势 -->
+    <section id="market" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">一、市场规模变化趋势</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    预制菜市场正经历快速增长，政策支持与消费升级共同推动行业发展
+                </p>
+            </div>
+
+            <!-- 数据卡片 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="bg-white rounded-xl p-6 card-shadow hover-scale">
+                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                        <i class="fa fa-line-chart text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">市场规模</h3>
+                    <p class="text-3xl font-bold text-primary mb-2">5000+亿</p>
+                    <p class="text-gray-600 text-sm">2025年预计规模</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 card-shadow hover-scale">
+                    <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+                        <i class="fa fa-users text-secondary text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">消费群体</h3>
+                    <p class="text-3xl font-bold text-secondary mb-2">3.6亿</p>
+                    <p class="text-gray-600 text-sm">主要消费人群</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 card-shadow hover-scale">
+                    <div class="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center mb-4">
+                        <i class="fa fa-rocket text-green-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">增长率</h3>
+                    <p class="text-3xl font-bold text-green-500 mb-2">20%+</p>
+                    <p class="text-gray-600 text-sm">年复合增长率</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 card-shadow hover-scale">
+                    <div class="w-12 h-12 bg-purple-500/10 rounded-full flex items-center justify-center mb-4">
+                        <i class="fa fa-file-text-o text-purple-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">政策支持</h3>
+                    <p class="text-3xl font-bold text-purple-500 mb-2">50+</p>
+                    <p class="text-gray-600 text-sm">相关政策文件</p>
+                </div>
+            </div>
+
+            <div class="text-center mb-6">
+                <img src="工业产成品.png" alt="工业产成品" class="mx-auto max-w-3xl">
+                <p class="text-sm text-gray-600 mt-2">
+                    从工业产成品图表可以看出，农副食品加工业、食品制造业和饮料制造业规模以上工业企业产成品在多年间呈现持续增长态势。这反映出食品相关产业整体发展向好，为预制菜行业提供了良好的产业基础支撑。农副食品加工业的增长意味着预制菜的原材料供应端产能不断提升，能更好满足预制菜生产对食材的需求；食品制造业和饮料制造业的发展也侧面体现了消费者对加工食品的需求热度，为预制菜市场拓展提供了消费心理和市场空间方面的有利条件 。
+                </p>
+            </div>
+
+            <!-- 折叠面板 -->
+            <div class="space-y-4">
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <div class="panel-header bg-neutral px-6 py-4 flex justify-between items-center cursor-pointer">
+                        <h3 class="font-semibold text-lg">1. 销量变化趋势</h3>
+                        <i class="fa fa-chevron-down text-primary transition-transform duration-300"></i>
+                    </div>
+                    <div class="panel-content px-6 py-4 bg-white">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                            <div class="bg-neutral rounded-lg p-4">
+                                <img src="全国居民主要食品消费量.png" alt="全国居民主要食品消费量" class="rounded-lg w-full h-auto">
+                                <p class="text-center text-sm text-gray-500 mt-2">
+                                    全国居民主要食品消费量反映饮食结构变化，影响预制菜食材供应与品类开发
+                                </p>
+                            </div>
+                            <div>
+                                <p class="mb-4">
+                                    预制菜市场规模从2019年的2445亿元增长至2023年的4196亿元，年复合增长率达到14.2%。随着消费者生活节奏加快和对便捷食品需求的提升，预计到2025年市场规模将突破5000亿元。
+                                </p>
+                                <p>
+                                    疫情期间，预制菜销量迎来爆发式增长，2020年同比增长率高达54.6%。尽管疫情后增速有所放缓，但消费者习惯已经养成，行业进入稳定增长阶段。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <div class="panel-header bg-neutral px-6 py-4 flex justify-between items-center cursor-pointer">
+                        <h3 class="font-semibold text-lg">2. 政策影响分析</h3>
+                        <i class="fa fa-chevron-down text-primary transition-transform duration-300"></i>
+                    </div>
+                    <div class="panel-content px-6 py-4 bg-white">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                            <div class="bg-neutral rounded-lg p-4">
+                                <img src="近十年我国预制菜相关企业注册量及其增速表现.png" alt="预制菜企业注册量及增速" class="rounded-lg w-full h-auto">
+                                <p class="text-center text-sm text-gray-500 mt-2">
+                                    近十年预制菜相关企业注册量及增速体现行业发展态势
+                                </p>
+                            </div>
+                            <div>
+                                <p class="mb-4">
+                                    近年来，国家和地方政府出台了一系列支持预制菜产业发展的政策，涵盖标准制定、产业园区建设、冷链物流支持等多个方面。2023年，农业农村部发布《关于推进预制菜产业高质量发展的意见》，明确提出到2025年培育50个以上预制菜产业集群的目标。
+                                </p>
+                                <p>
+                                    地方层面，广东、山东、河南等地纷纷出台专项政策，推动预制菜产业与现代农业、食品加工业深度融合，促进产业链升级。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <div class="panel-header bg-neutral px-6 py-4 flex justify-between items-center cursor-pointer">
+                        <h3 class="font-semibold text-lg">3. 行业发展趋势</h3>
+                        <i class="fa fa-chevron-down text-primary transition-transform duration-300"></i>
+                    </div>
+                    <div class="panel-content px-6 py-4 bg-white">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                            <div class="bg-neutral rounded-lg p-4">
+                                <img src="居民消费水平.png" alt="居民消费水平" class="rounded-lg w-full h-auto">
+                                <p class="text-center text-sm text-gray-500 mt-2">
+                                </p>
+                            </div>
+                            <div>
+                                <p class="mb-4">
+                                    居民消费水平的变化对预制菜市场规模有着显著影响。从图表中可以看出，随着居民人均可支配收入的提高，人均消费支出也呈现稳步增长态势，这为预制菜市场的发展提供了坚实的经济基础。当居民收入增加时，消费者对于生活品质的追求也随之提升，对餐饮的便捷性、多样性和品质有了更高要求，预制菜正好满足了这部分需求。
+                                </p>
+                                <p>
+                                    同时，不同地区居民消费水平的差异也导致预制菜消费市场呈现出区域性特征。经济发达地区居民消费水平较高，对预制菜的接受度和购买力更强，市场规模相对较大；而在经济欠发达地区，预制菜市场尚处于培育阶段。此外，居民消费结构的变化，如食品支出占比的变化以及消费升级趋势，也都与预制菜市场规模的变化密切相关，共同影响着预制菜行业的发展前景。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="panel-content px-6 py-4 bg-white">
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                                <div class="bg-neutral rounded-lg p-4">
+                                    <img src="预制菜分类体系.png" alt="预制菜分类体系" class="mx-auto max-w-[500px]">
+                                    <p class="text-sm text-gray-600 mt-2">
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="mb-4">
+                                        预制菜分类体系图表清晰界定了预制菜的定义和类别。明确的分类有助于预制菜企业精准定位产品，例如即食预制菜适合快节奏生活且对便捷性要求极高的消费者群体，企业可针对这类人群在营销渠道和产品包装等方面进行优化；即烹预制菜则需要在烹饪指导和调味方面进一步创新。同时，对不属于预制菜类别的界定，也能帮助企业避免概念混淆，集中精力做好预制菜核心业务，推动行业规范、有序发展 。
+                                    </p>
+                                    <p>
+                                        同时，不同地区居民消费水平的差异也导致预制菜消费市场呈现出区域性特征。经济发达地区居民消费水平较高，对预制菜的接受度和购买力更强，市场规模相对较大；而在经济欠发达地区，预制菜市场尚处于培育阶段。此外，居民消费结构的变化，如食品支出占比的变化以及消费升级趋势，也都与预制菜市场规模的变化密切相关，共同影响着预制菜行业的发展前景。
+                                    </p>
+                                </div>
+                            </div>
+
+                        <div>
+                            <p class="mb-4">
+                                预制菜行业正经历从0到1的快速发展阶段，市场参与者不断增加，产品种类日益丰富。从渠道结构来看，传统的ToB业务（餐饮企业、团餐等）仍是主要收入来源，但ToC市场增长迅速，2023年增速达到28%，超过ToB市场的15%。
+                            </p>
+                            <p>
+                                未来，行业将朝着标准化、品牌化、智能化方向发展，供应链整合能力和产品创新能力将成为企业核心竞争力。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 需求侧洞察 -->
+    <section id="demand" class="py-16 bg-neutral">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">二、需求侧洞察</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    深入了解预制菜消费者画像与消费习惯，把握市场需求
+                </p>
+            </div>
+
+            <!-- 消费者画像 -->
+            <div class="bg-white rounded-xl p-6 mb-12 card-shadow">
+                <h3 class="text-xl font-semibold mb-6">1. 消费者画像</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div class="bg-neutral rounded-lg p-5 hover-scale lg:col-span-1">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3">
+                                <i class="fa fa-user text-primary"></i>
+                            </div>
+                            <h4 class="font-medium">年龄分布</h4>
+                        </div>
+                        <img src="预制菜消费者年龄分布.png" alt="预制菜消费者年龄分布" class="rounded-lg w-full h-auto">
+                        <p class="text-sm text-gray-600 mt-3">
+                            31 - 40岁人群占比最高，达到42%，其次是21 - 30岁人群，占比28%。
+                        </p>
+                    </div>
+
+                    <div class="bg-neutral rounded-lg p-4 hover-scale lg:col-span-2">
+                        <div class="grid grid-cols-1 gap-4">
+                            <div>
+                                <div class="flex items-center mb-2">
+                                    <div class="w-8 h-8 bg-secondary/10 rounded-full flex items-center justify-center mr-2">
+                                        <i class="fa fa-map-marker text-secondary"></i>
+                                    </div>
+                                    <h4 class="font-medium text-sm">区域分布</h4>
+                                </div>
+                                <img src="预制菜消费者区域分布.png" alt="预制菜消费者区域分布" class="rounded-lg w-full h-auto max-w-[500px] mx-auto">
+                                <p class="text-xs text-gray-600 mt-2">
+                                    一线城市36%，二线城市26%，三四线城市28%，五六线城市10%
+                                </p>
+                            </div>
+
+                            <div>
+                                <div class="flex items-center mb-2">
+                                    <div class="w-8 h-8 bg-green-500/10 rounded-full flex items-center justify-center mr-2">
+                                        <i class="fa fa-money text-green-500"></i>
+                                    </div>
+                                    <h4 class="font-medium text-sm">婚姻状况分布</h4>
+                                </div>
+                                <img src="预制菜消费者婚姻状况及性别分布.png" alt="预制菜消费者婚姻状况及性别分布" class="rounded-lg w-full h-auto max-w-[500px] mx-auto">
+                                <p class="text-xs text-gray-600 mt-2">
+                                    已婚74%，未婚26%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mb-6">
+                    <img src="按人口平均的主要农产品产量.png" alt="按人口平均的主要农产品产量" class="mx-auto max-w-3xl">
+                    <p class="text-sm text-gray-600 mt-2">
+                        按人口平均的主要农产品产量图表展示了各类农产品人均产量的变化情况。人均蔬菜、水果、粮食等产量的稳定或增长，为预制菜行业提供了丰富且稳定的原材料来源。例如，充足的蔬菜产量能保障预制菜中蔬菜品类的丰富性和供应稳定性；人均粮食产量的情况也关系到预制菜中主食相关产品的生产。这些农产品产量的变化趋势，影响着预制菜企业的采购策略和产品研发方向，也在一定程度上决定了预制菜成本和市场价格的波动范围 。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 消费习惯 -->
+            <div class="bg-white rounded-xl p-6 mb-12 card-shadow">
+                <h3 class="text-xl font-semibold mb-6">2. 消费习惯</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div>
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-3">购买频率</h4>
+                            <div class="bg-neutral rounded-lg p-4">
+                                <img src="预制菜购买频率.png" alt="预制菜购买频率" class="rounded-lg w-full h-auto">
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="font-medium mb-3">购买渠道</h4>
+                            <div class="bg-neutral rounded-lg p-4">
+                                <img src="预制菜购买渠道.png" alt="预制菜购买渠道" class="rounded-lg w-full h-auto">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-medium mb-3">消费者购买原因</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-2/3 bg-primary/10 h-10 rounded-full overflow-hidden">
+                                    <div class="bg-primary h-full rounded-full" style="width: 85%"></div>
+                                </div>
+                                <div class="w-1/3 pl-4">
+                                    <span class="text-sm font-medium">方便/省时</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="w-2/3 bg-primary/10 h-10 rounded-full overflow-hidden">
+                                    <div class="bg-primary h-full rounded-full" style="width: 68%"></div>
+                                </div>
+                                <div class="w-1/3 pl-4">
+                                    <span class="text-sm font-medium">口味稳定</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="w-2/3 bg-primary/10 h-10 rounded-full overflow-hidden">
+                                    <div class="bg-primary h-full rounded-full" style="width: 52%"></div>
+                                </div>
+                                <div class="w-1/3 pl-4">
+                                    <span class="text-sm font-medium">价格实惠</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="w-2/3 bg-primary/10 h-10 rounded-full overflow-hidden">
+                                    <div class="bg-primary h-full rounded-full" style="width: 45%"></div>
+                                </div>
+                                <div class="w-1/3 pl-4">
+                                    <span class="text-sm font-medium">健康营养</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="w-2/3 bg-primary/10 h-10 rounded-full overflow-hidden">
+                                    <div class="bg-primary h-full rounded-full" style="width: 32%"></div>
+                                </div>
+                                <div class="w-1/3 pl-4">
+                                    <span class="text-sm font-medium">尝试新鲜</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <h4 class="font-medium mb-3">消费者关注因素</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-neutral p-4 rounded-lg text-center">
+                                    <div class="text-3xl font-bold text-primary mb-1">82%</div>
+                                    <p class="text-sm">食材新鲜度</p>
+                                </div>
+                                <div class="bg-neutral p-4 rounded-lg text-center">
+                                    <div class="text-3xl font-bold text-primary mb-1">78%</div>
+                                    <p class="text-sm">添加剂使用</p>
+                                </div>
+                                <div class="bg-neutral p-4 rounded-lg text-center">
+                                    <div class="text-3xl font-bold text-primary mb-1">75%</div>
+                                    <p class="text-sm">营养成分</p>
+                                </div>
+                                <div class="bg-neutral p-4 rounded-lg text-center">
+                                    <div class="text-3xl font-bold text-primary mb-1">65%</div>
+                                    <p class="text-sm">品牌口碑</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 需求影响因素 -->
+            <div class="bg-white rounded-xl p-6 card-shadow">
+                <h3 class="text-xl font-semibold mb-6">3. 需求影响因素</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-neutral rounded-lg p-5 hover-scale">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fa fa-clock-o text-primary text-xl"></i>
+                        </div>
+                        <h4 class="font-medium text-center mb-3">生活节奏加快</h4>
+                        <p class="text-sm text-gray-600 text-center">
+                            现代人工作压力大，可用于烹饪的时间减少，预制菜满足了快节奏生活需求。
+                        </p>
+                    </div>
+
+                    <div class="bg-neutral rounded-lg p-5 hover-scale">
+                        <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fa fa-users text-secondary text-xl"></i>
+                        </div>
+                        <h4 class="font-medium text-center mb-3">家庭结构变化</h4>
+                        <p class="text-sm text-gray-600 text-center">
+                            单身贵族和丁克家庭增多，小型化家庭对预制菜需求更高。
+                        </p>
+                    </div>
+
+                    <div class="bg-neutral rounded-lg p-5 hover-scale">
+                        <div class="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fa fa-mobile text-green-500 text-xl"></i>
+                        </div>
+                        <h4 class="font-medium text-center mb-3">线上渠道发展</h4>
+                        <p class="text-sm text-gray-600 text-center">
+                            电商平台和外卖渠道的发展，使预制菜购买更加便捷。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 方便与健康的平衡 -->
+    <section id="balance" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">三、方便与健康的平衡</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    在追求便捷的同时，消费者对预制菜健康属性的关注度不断提升
+                </p>
+            </div>
+
+            <!-- 健康与方便的平衡 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="bg-neutral rounded-xl p-6 hover-scale">
+                    <h3 class="text-xl font-semibold mb-4">1. 健康预制菜发展趋势</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <i class="fa fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">轻食化</h4>
+                                <p class="text-sm text-gray-600">
+                                    低卡、低脂、低糖预制菜需求增长，如沙拉、鸡胸肉、水煮菜等品类受欢迎。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <i class="fa fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">食材优质化</h4>
+                                <p class="text-sm text-gray-600">
+                                    消费者更关注食材来源和品质，有机、无添加、天然食材的预制菜更受青睐。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <i class="fa fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">营养科学化</h4>
+                                <p class="text-sm text-gray-600">
+                                    营养均衡搭配的预制菜产品增多，如搭配好的套餐、定制化营养餐等。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <i class="fa fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">工艺健康化</h4>
+                                <p class="text-sm text-gray-600">
+                                    采用冷冻干燥、真空包装、低温杀菌等先进工艺，减少营养流失和添加剂使用。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-neutral rounded-xl p-6 hover-scale">
+                    <h3 class="text-xl font-semibold mb-4">2. 现存问题与挑战</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-secondary/10 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <i class="fa fa-exclamation-triangle text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">高盐高油问题</h4>
+                                <p class="text-sm text-gray-600">
+                                    部分预制菜为提升口感和延长保质期，使用较多的盐、油和添加剂，不符合健康饮食理念。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-secondary/10 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <i class="fa fa-exclamation-triangle text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">营养流失</h4>
+                                <p class="text-sm text-gray-600">
+                                    加工过程中可能导致维生素、矿物质等营养成分流失，长期食用可能造成营养不均衡。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-secondary/10 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <i class="fa fa-exclamation-triangle text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">标签不透明</h4>
+                                <p class="text-sm text-gray-600">
+                                    部分产品营养标签不规范，成分标注不清晰，消费者难以准确了解产品营养信息。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-secondary/10 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <i class="fa fa-exclamation-triangle text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">冷链物流限制</h4>
+                                <p class="text-sm text-gray-600">
+                                    部分预制菜需要冷链运输和储存，冷链不完善地区可能影响产品品质和安全性。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 解决策略 -->
+            <div class="bg-gradient-to-r from-primary/90 to-primary rounded-xl p-8 text-white mb-12">
+                <h3 class="text-2xl font-semibold mb-6">3. 平衡健康与方便的解决策略</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white/10 rounded-lg p-5 backdrop-blur-sm">
+                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fa fa-leaf text-white text-xl"></i>
+                        </div>
+                        <h4 class="font-medium text-center mb-3">优化食材选择</h4>
+                        <p class="text-sm text-white/80 text-center">
+                            选用新鲜、天然、有机食材，减少高盐高油配料，增加膳食纤维和优质蛋白质的摄入。
+                        </p>
+                    </div>
+
+                    <div class="bg-white/10 rounded-lg p-5 backdrop-blur-sm">
+                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fa fa-flask text-white text-xl"></i>
+                        </div>
+                        <h4 class="font-medium text-center mb-3">创新加工工艺</h4>
+                        <p class="text-sm text-white/80 text-center">
+                            采用先进的低温加工、速冻锁鲜等技术，最大限度保留食材的营养成分和原有风味。
+                        </p>
+                    </div>
+
+                    <div class="bg-white/10 rounded-lg p-5 backdrop-blur-sm">
+                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fa fa-bar-chart text-white text-xl"></i>
+                        </div>
+                        <h4 class="font-medium text-center mb-3">透明营养标签</h4>
+                        <p class="text-sm text-white/80 text-center">
+                            清晰标注营养成分、热量、添加剂等信息，帮助消费者做出健康选择。
+                        </p>
+                    </div>
+
+                    <div class="bg-white/10 rounded-lg p-5 backdrop-blur-sm">
+                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fa fa-line-chart text-white text-xl"></i>
+                        </div>
+                        <h4 class="font-medium text-center mb-3">个性化定制</h4>
+                        <p class="text-sm text-white/80 text-center">
+                            根据不同人群的营养需求，提供定制化预制菜方案，如健身餐、老年餐、儿童餐等。
+                        </p>
+                    </div>
+
+                    <div class="bg-white/10 rounded-lg p-5 backdrop-blur-sm">
+                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fa fa-truck text-white text-xl"></i>
+                        </div>
+                        <h4 class="font-medium text-center mb-3">完善冷链物流</h4>
+                        <p class="text-sm text-white/80 text-center">
+                            加强冷链基础设施建设，确保预制菜从生产到消费全程处于适宜温度环境。
+                        </p>
+                    </div>
+
+                    <div class="bg-white/10 rounded-lg p-5 backdrop-blur-sm">
+                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fa fa-book text-white text-xl"></i>
+                        </div>
+                        <h4 class="font-medium text-center mb-3">加强营养教育</h4>
+                        <p class="text-sm text-white/80 text-center">
+                            通过宣传和教育，提高消费者对预制菜营养知识的了解，引导健康消费观念。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 预制菜健康化发展趋势 -->
+            <div class="bg-neutral rounded-xl p-8">
+                <h3 class="text-2xl font-semibold mb-6 text-center">预制菜健康化发展趋势</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-lg p-5 shadow-sm hover-scale">
+                        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fa fa-leaf text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="font-medium text-center mb-3">有机天然</h4>
+                        <p class="text-sm text-gray-600 text-center">
+                            有机认证预制菜产品将逐渐成为主流，满足消费者对健康、环保的需求。
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-5 shadow-sm hover-scale">
+                        <div class="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fa fa-heartbeat text-secondary text-2xl"></i>
+                        </div>
+                        <h4 class="font-medium text-center mb-3">功能强化</h4>
+                        <p class="text-sm text-gray-600 text-center">
+                            添加益生菌、膳食纤维、功能性成分的预制菜将受到更多关注。
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-5 shadow-sm hover-scale">
+                        <div class="w-14 h-14 bg-green-500/10 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fa fa-balance-scale text-green-500 text-2xl"></i>
+                        </div>
+                        <h4 class="font-medium text-center mb-3">精准营养</h4>
+                        <p class="text-sm text-gray-600 text-center">
+                            根据个人健康数据定制的精准营养预制菜将成为新趋势。
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-5 shadow-sm hover-scale">
+                        <div class="w-14 h-14 bg-purple-500/10 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fa fa-cutlery text-purple-500 text-2xl"></i>
+                        </div>
+                        <h4 class="font-medium text-center mb-3">全球风味</h4>
+                        <p class="text-sm text-gray-600 text-center">
+                            融合世界各地健康饮食文化的预制菜将丰富市场选择。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 总结与展望 -->
+    <section id="summary" class="py-16 bg-neutral">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">总结与展望</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    预制菜市场潜力巨大，健康化、个性化、智能化将成为未来发展方向
+                </p>
+            </div>
+
+            <!-- 发展趋势 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-xl p-6 card-shadow">
+                    <h3 class="text-xl font-semibold mb-4">行业发展趋势</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fa fa-arrow-right text-primary mt-1 mr-3"></i>
+                            <span>市场规模持续扩大，预计2025年突破5000亿元</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-arrow-right text-primary mt-1 mr-3"></i>
+                            <span>ToC市场增速加快，品牌化、连锁化趋势明显</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-arrow-right text-primary mt-1 mr-3"></i>
+                            <span>技术创新推动产品升级，冷链物流和保鲜技术不断完善</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-arrow-right text-primary mt-1 mr-3"></i>
+                            <span>跨界融合加速，预制菜与餐饮、零售、电商等行业深度合作</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-arrow-right text-primary mt-1 mr-3"></i>
+                            <span>健康化、个性化、定制化产品成为市场新宠</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 card-shadow">
+                    <h3 class="text-xl font-semibold mb-4">挑战与机遇</h3>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="p-4 bg-primary/5 rounded-lg">
+                            <h4 class="font-medium text-primary mb-2">挑战</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li>• 消费者对预制菜认知度和接受度有待提高</li>
+                                <li>• 行业标准和监管体系尚不完善</li>
+                                <li>• 原材料价格波动影响企业成本控制</li>
+                                <li>• 冷链物流基础设施建设不足</li>
+                                <li>• 产品同质化严重，创新能力不足</li>
+                            </ul>
+                        </div>
+
+                        <div class="p-4 bg-green-500/5 rounded-lg">
+                            <h4 class="font-medium text-green-500 mb-2">机遇</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li>• 政策支持力度不断加大</li>
+                                <li>• 消费升级和生活节奏加快带来需求增长</li>
+                                <li>• 电商和新零售渠道发展拓宽销售路径</li>
+                                <li>• 健康饮食理念推动产品创新</li>
+                                <li>• 技术进步提升生产效率和产品品质</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 未来展望 -->
+            <div class="bg-white rounded-xl p-8 card-shadow">
+                <h3 class="text-2xl font-semibold mb-6 text-center">预制菜行业未来展望</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-neutral rounded-lg p-5 hover-scale">
+                        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fa fa-lightbulb-o text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="font-medium text-center mb-3">创新驱动</h4>
+                        <p class="text-sm text-gray-600 text-center">
+                            未来预制菜行业将更加注重产品创新，开发更多符合消费者需求的健康、美味、便捷的预制菜产品。同时，技术创新也将推动行业升级，如智能化生产、冷链物流技术等。
+                        </p>
+                    </div>
+
+                    <div class="bg-neutral rounded-lg p-5 hover-scale">
+                        <div class="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fa fa-users text-secondary text-2xl"></i>
+                        </div>
+                        <h4 class="font-medium text-center mb-3">消费者导向</h4>
+                        <p class="text-sm text-gray-600 text-center">
+                            消费者需求将成为预制菜行业发展的核心驱动力。企业将更加关注消费者的健康需求、口味偏好和便捷需求，提供更加个性化、定制化的产品和服务。
+                        </p>
+                    </div>
+
+                    <div class="bg-neutral rounded-lg p-5 hover-scale">
+                        <div class="w-14 h-14 bg-green-500/10 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fa fa-globe text-green-500 text-2xl"></i>
+                        </div>
+                        <h4 class="font-medium text-center mb-3">全球化发展</h4>
+                        <p class="text-sm text-gray-600 text-center">
+                            随着全球化的发展，预制菜行业将迎来更广阔的市场空间。企业将加强国际合作，引进国外先进技术和管理经验，同时将中国预制菜推向国际市场。
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-lg font-medium">预制菜行业正处于快速发展的黄金时期，机遇与挑战并存。</p>
+                    <p class="mt-4">企业需要不断创新，提升产品品质和服务水平，以满足消费者日益多样化的需求；</p>
+                    <p>政府需要加强政策支持和监管，推动行业标准化、规范化发展；</p>
+                    <p>消费者需要增强对预制菜的认知和信任，理性选择预制菜产品。</p>
+                    <p class="mt-6 font-semibold text-primary">相信在各方的共同努力下，预制菜行业将迎来更加美好的未来！</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // 导航菜单切换
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // 滚动时导航栏样式变化
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-2', 'shadow-lg');
+                navbar.classList.remove('py-3', 'shadow-md');
+            } else {
+                navbar.classList.add('py-3', 'shadow-md');
+                navbar.classList.remove('py-2', 'shadow-lg');
+            }
+        });
+
+        // 折叠面板功能
+        document.querySelectorAll('.panel-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const icon = header.querySelector('i');
+                
+                // 切换内容显示/隐藏
+                content.classList.toggle('hidden');
+                
+                // 切换图标旋转
+                if (content.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80, // 考虑导航栏高度
+                        behavior: 'smooth'
+                    });
+                    
+                    // 如果是移动端，点击后关闭菜单
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
+    
